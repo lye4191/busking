@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         listview.setAdapter(adapter);
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busker), "MAP", "광안리 해수욕장" ,"공연 예정");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busker1), "WHO", "부산항 컨벤션센터","공연 중");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busker1), "ICT", "부산대학교 제도관","공연 종료");
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
