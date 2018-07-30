@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity
+            android:name=".AddbuskActivity"
+            android:label="@string/title_activity_addbusk"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
