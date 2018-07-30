@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "107375656405",
+    "firebase_url": "https://busking-68cdf.firebaseio.com",
+    "project_id": "busking-68cdf",
+    "storage_bucket": "busking-68cdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107375656405:android:0c2e537095f36ecf",
+        "android_client_info": {
+          "package_name": "com.example.wjdck.busking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107375656405-kl6rtm9nrevvaush12gmmfp3k8rc3rjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0X2-1KTrJdVwYjRcYoNsjJT506ymaWmU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
