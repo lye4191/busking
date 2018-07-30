@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">busking</string>
     <string name="title_activity_addbusk">AddbuskActivity</string>
+    <string name="title_activity_lodingclass">lodingclass</string>
 </resources>
