@@ -1,6 +1,7 @@
 package com.example.wjdck.busking;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fromMyLocation(View v){
+
+    }
+
+    public void addClick(View v){
+
+        Intent intent = new Intent(MainActivity.this, AddbuskActivity.class);
+        startActivity(intent);
+
 
     }
 
