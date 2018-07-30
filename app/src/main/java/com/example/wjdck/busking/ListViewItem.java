@@ -7,6 +7,7 @@ public class ListViewItem {
     private Drawable iconDrawable;
     private String nameStr;
     private String addrStr;
+    private String onairStr;
 
     public void setIcon(Drawable icon){
         iconDrawable = icon;
@@ -18,6 +19,10 @@ public class ListViewItem {
 
     public void setAddr(String addr){
         addrStr = addr;
+    }
+
+    public void setOnair(String onair){
+        onairStr = onair;
     }
 
     public Drawable getIcon(){
@@ -32,5 +37,8 @@ public class ListViewItem {
         return this.addrStr;
     }
 
+    public String getOnair(){
+        return this.onairStr;
+    }
 
 }
