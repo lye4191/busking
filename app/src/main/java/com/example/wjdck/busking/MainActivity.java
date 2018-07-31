@@ -14,6 +14,9 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
+    LocationThread thread = null;
+    EditText editText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,14 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView parent, View v, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
-                //
-            }
-        });
-
         );
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -72,8 +67,15 @@ public class MainActivity extends AppCompatActivity {
     }
     public void search(View v){
 
+        editText = (EditText)findViewById(R.id.keyword);
+        String userStr = editText.getText().toString();
+        String urlStr = thread.defaultUrl + userStr;
+
         Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+        intent.putExtra("url", urlStr);
         startActivity(intent);
+
+
     }
 
     public void fromMyLocation(View v){

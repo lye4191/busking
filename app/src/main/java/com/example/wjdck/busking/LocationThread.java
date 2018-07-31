@@ -23,10 +23,9 @@ public class LocationThread extends Thread{
     LocationThread thread =  null;
     Handler handler = new Handler();
     int jsonResultsLength = 0;
-    public static String defaultUrl = "https://dapi.kakao.net/v2/local/search/category.json?query=광안리";
+    public static String defaultUrl = "https://dapi.kakao.net/v2/local/search/category.json?query=";
 
     //public static String defaultUrl = "https://dapi.kakao.net/v2/local/search/address.json?query=전북 삼성동 100";
-
 
     String lats[];
     String lngs[];
