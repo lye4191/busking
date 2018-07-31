@@ -31,6 +31,7 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".DetailActivity" />
+        <activity android:name=".Duration"/>
         <activity
             android:name=".AddbuskActivity"
             android:label="@string/title_activity_addbusk"
@@ -40,6 +41,8 @@
             android:name=".SearchActivity"
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
+
+
     </application>
 
 </manifest>

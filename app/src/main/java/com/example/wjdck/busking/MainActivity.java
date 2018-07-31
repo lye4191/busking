@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busking), "비틀즈", "수변공원 세븐일레븐 앞","공연 중");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busker), "MAP", "광안리 해수욕장" ,"공연 예정");
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busker1), "WHO", "부산항 컨벤션센터","공연 종료");
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busker3), "DoGo", "해운대 해수욕장","공연 종료");
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.busker1), "DoGo", "해운대 해수욕장","공연 종료");
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
