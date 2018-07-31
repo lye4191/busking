@@ -3,48 +3,18 @@ package com.example.wjdck.busking;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 
-import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-
-class Busk{
-    public String name;
-    public String locate;
-    public String time;
-    public String description;
-    public String genre;
-    public Image image;
-
-    public Busk(String name, String locate, String time, String description, String genre){
-        this.name = name;
-        this.locate = locate;
-        this.time = time;
-        this.description = description;
-        this.genre = genre;
-    }
-
-    public Busk(String name, String locate, String time, String description, String genre, Image image){
-        this.name = name;
-        this.locate = locate;
-        this.time = time;
-        this.description = description;
-        this.genre = genre;
-        this.image = image;
-    }
-
-}
 
 public class AddbuskActivity extends AppCompatActivity {
     //데이터 베이스
@@ -61,6 +31,7 @@ public class AddbuskActivity extends AppCompatActivity {
 
         Button btn_cancle = (Button)this.findViewById(R.id.cancle_btn);
         Button btn_regist = (Button)this.findViewById(R.id.regist_btn);
+        Button btn_attach = (Button)this.findViewById(R.id.attach_btn);
         final EditText edit_name = (EditText) this.findViewById(R.id.name_edit);
         final EditText edit_locate = (EditText) this.findViewById(R.id.locate_edit);
         final EditText edit_time = (EditText) this.findViewById(R.id.time_edit);
@@ -68,7 +39,9 @@ public class AddbuskActivity extends AppCompatActivity {
         final EditText edit_genre = (EditText) this.findViewById(R.id.genre_edit);
 
         database = FirebaseDatabase.getInstance();
-        ref = database.getReference("busks");
+        ref = database.getReference("busks1");// 여기 busks를 방 이름을 ㅗ치면
+
+        DatabaseReference myRef = ref.getRoot();
 
         btn_cancle.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -89,8 +62,18 @@ public class AddbuskActivity extends AppCompatActivity {
                 Busk busk = new Busk(name, locate, time, description, genre);
 
                 ref.push().setValue(busk);
+                //onBackPressed();
             }
         });
+
+        btn_attach.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                
+            }
+        });
+
+
 
     }
 
