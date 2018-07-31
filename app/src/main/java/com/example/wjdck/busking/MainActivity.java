@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void search(View v){
 
+        Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+        startActivity(intent);
     }
 
     public void fromMyLocation(View v){

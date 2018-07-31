@@ -35,9 +35,11 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/search"
             android:id="@+id/search_btn"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="7dp"
             android:onClick="search"
             android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
             android:background="#00000000"/>
 
         <ImageButton
@@ -46,6 +48,8 @@
             app:srcCompat="@drawable/mylocation"
             android:id="@+id/locate_btn"
             android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
             android:onClick="fromMyLocation"
             android:background="#00000000"/>
 
@@ -72,6 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="250dp"
+            android:layout_marginBottom="5dp"
             android:padding="5sp"
             app:srcCompat="@drawable/add"
             android:id="@+id/add_btn"
