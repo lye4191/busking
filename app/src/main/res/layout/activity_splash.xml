@@ -11,5 +11,4 @@
         android:layout_weight="0.82"
         android:src="@drawable/icon"/>
 
-
 </LinearLayout>
