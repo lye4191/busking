@@ -1,12 +1,19 @@
 package com.example.wjdck.busking;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,6 +28,11 @@ public class AddbuskActivity extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference ref;
 
+    private Uri mlmageCaptureUri;
+    private ImageView iv_UserPhoto;
+    private int id_view;
+    private String absolutePath;
+
     //정보 담을 객체
     List<Busk> userList = new ArrayList<>();
 
@@ -29,6 +41,7 @@ public class AddbuskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addbusk);
 
+        iv_UserPhoto = (ImageView)this.findViewById(R.id.user_image);
         Button btn_cancle = (Button)this.findViewById(R.id.cancle_btn);
         Button btn_regist = (Button)this.findViewById(R.id.regist_btn);
         Button btn_attach = (Button)this.findViewById(R.id.attach_btn);
@@ -66,14 +79,28 @@ public class AddbuskActivity extends AppCompatActivity {
             }
         });
 
+
+
         btn_attach.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                
+            public void onClick(View v) {
+                doTakeAlbumAction();
             }
         });
 
+    }
+    public void doTakeAlbumAction() {
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType(MediaStore.Images.Media.CONTENT_TYPE);
+        startActivityForResult(intent, 1);
+    }
 
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode != 1)
+            return;
+        mlmageCaptureUri = data.getData();
+        Log.d("SmartWheel", mlmageCaptureUri.getPath().toString());
 
     }
 
