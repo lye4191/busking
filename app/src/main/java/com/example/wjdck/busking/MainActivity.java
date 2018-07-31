@@ -41,18 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 String addrStr = item.getAddr();
                 Drawable iconDrawable = item.getIcon();
 
-            }
-        }
-
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView parent, View v, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
-                //
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                startActivity(intent);
             }
         });
-
-        );
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
