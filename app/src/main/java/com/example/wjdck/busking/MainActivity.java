@@ -42,7 +42,16 @@ public class MainActivity extends AppCompatActivity {
                 Drawable iconDrawable = item.getIcon();
 
             }
+        }
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View v, int position, long id) {
+                Intent intent = new Intent(getApplicationContext(), .class);
+            }
         });
+
+        );
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
