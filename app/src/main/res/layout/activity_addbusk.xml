@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
          <LinearLayout
@@ -94,7 +94,7 @@
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:backgroundTint="@color/colorPrimaryDark"
-                 android:textSize="10dp" />
+                 android:textSize="15dp" />
          </LinearLayout>
 
         <LinearLayout
@@ -113,7 +113,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
             <LinearLayout
@@ -140,7 +140,7 @@
                     android:layout_weight="3"
                     android:layout_gravity="center"
                     android:text="사진 선택"
-                    android:textSize="15sp"
+                    android:textSize="20sp"
                     android:background="#F8A45E"
                     android:textColor="@android:color/white"/>
             </LinearLayout>

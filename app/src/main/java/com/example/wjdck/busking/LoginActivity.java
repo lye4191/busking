@@ -16,8 +16,8 @@ package com.example.wjdck.busking;
  * limitations under the License.
  */
 
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
@@ -59,18 +59,19 @@ public class LoginActivity extends BaseActivity implements
         if (user != null) {
             //mStatusTextView.setText(getString(R.string.google_status_fmt, user.getEmail()));
             //mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
-
-            findViewById(R.id.sign_in_button).setVisibility(View.GONE);
+//            Toast.makeText(this, user.getDisplayName() + "로 로그인합니다", Toast.LENGTH_SHORT).show();
+//            findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             // findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
+            signOut();
         } else {
             // mStatusTextView.setText(R.string.signed_out);
             //
             //
             // mDetailTextView.setText(null);
 
-            findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
             // findViewById(R.id.sign_out_and_disconnect).setVisibility(View.GONE);
         }
+        findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -96,6 +97,7 @@ public class LoginActivity extends BaseActivity implements
         // [START initialize_auth]
         mAuth = FirebaseAuth.getInstance();
         // [END initialize_auth]
+//        signIn();
     }
 
     // [START on_start_check_user]

@@ -10,7 +10,7 @@ class Busk{
     public String time;
     public String description;
     public String genre;
-    public Image image;
+    public String image;
 
     public Busk(String name, String locate, String time, String description, String genre){
         this.name = name;
@@ -20,7 +20,7 @@ class Busk{
         this.genre = genre;
     }
 
-    public Busk(String name, String locate, String time, String description, String genre, Image image){
+    public Busk(String name, String locate, String time, String description, String genre, String image){
         this.name = name;
         this.locate = locate;
         this.time = time;
