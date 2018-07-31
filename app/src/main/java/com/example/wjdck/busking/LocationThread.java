@@ -23,7 +23,7 @@ public class LocationThread extends Thread{
     LocationThread thread =  null;
     Handler handler = new Handler();
     int jsonResultsLength = 0;
-    public static String defaultUrl = "https://dapi.kakao.net/v2/local/search/category.json?query=";
+    public static String defaultUrl = "https://dapi.kakao.net/v2/local/search/keyword.json?query=";
 
     //public static String defaultUrl = "https://dapi.kakao.net/v2/local/search/address.json?query=전북 삼성동 100";
 
@@ -34,9 +34,12 @@ public class LocationThread extends Thread{
 
     public LocationThread(String inStr) { urlStr = inStr;}
 
+
     public void run(){
         try{
             final String output = request(urlStr);
+            //Log.d("qwe", output);
+
             handler.post(new Runnable(){
                 @Override
                 public void run(){
@@ -55,11 +58,11 @@ public class LocationThread extends Thread{
             URL url = new URL(urlStr);
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();
             if(conn != null){
+
                 conn.setConnectTimeout(10000);
                 conn.setRequestMethod("GET");
                 conn.setDoInput(true);
                 conn.setDoOutput(true);
-                conn.setRequestProperty("Accept-Charset", "UTF-8");
                 conn.setRequestProperty("Authorization", "KakaoAK e916e007bd9d14b1096ab8ae52dbb09e");
 
 

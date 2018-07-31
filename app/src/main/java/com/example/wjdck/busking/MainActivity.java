@@ -44,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 String addrStr = item.getAddr();
                 Drawable iconDrawable = item.getIcon();
 
+
+
+
+
+
+
+                
+
             }
         }
 

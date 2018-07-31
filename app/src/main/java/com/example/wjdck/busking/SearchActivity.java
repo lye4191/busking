@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -19,6 +20,7 @@ public class SearchActivity extends AppCompatActivity {
         LocationThread thread = null;
         Intent intent = getIntent();
         String url = intent.getStringExtra("url");
+        Log.d("url 상황", url);
 
         thread = new LocationThread(url);
         thread.start();
