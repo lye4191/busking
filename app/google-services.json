@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "107375656405",
-    "firebase_url": "https://busking-68cdf.firebaseio.com",
-    "project_id": "busking-68cdf",
-    "storage_bucket": "busking-68cdf.appspot.com"
+    "project_number": "1092225104825",
+    "firebase_url": "https://busking-b29a1.firebaseio.com",
+    "project_id": "busking-b29a1",
+    "storage_bucket": "busking-b29a1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:107375656405:android:0c2e537095f36ecf",
+        "mobilesdk_app_id": "1:1092225104825:android:0c2e537095f36ecf",
         "android_client_info": {
           "package_name": "com.example.wjdck.busking"
         }
       },
       "oauth_client": [
         {
-          "client_id": "107375656405-kl6rtm9nrevvaush12gmmfp3k8rc3rjl.apps.googleusercontent.com",
+          "client_id": "1092225104825-u5g0ut4uemq69uki34remi0nnabfmsa9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wjdck.busking",
+            "certificate_hash": "4ecfc1ce7bd389df079649561f0bbc7410f722f8"
+          }
+        },
+        {
+          "client_id": "1092225104825-1m4t5e815qkah6kbne9ikidalbdmtf1i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD0X2-1KTrJdVwYjRcYoNsjJT506ymaWmU"
+          "current_key": "AIzaSyDy0nyzvqIGdLsxt3tOiIbgz_wR1QCa2TU"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092225104825-1m4t5e815qkah6kbne9ikidalbdmtf1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
