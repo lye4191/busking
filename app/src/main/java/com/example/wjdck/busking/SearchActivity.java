@@ -43,8 +43,10 @@ public class SearchActivity extends AppCompatActivity {
 
                 //텍스트뷰에 출력
                 //selected_item_textview.setText(selected_item);
-                Intent intent = new Intent(SearchActivity.this, MainActivity.class);
+                Intent intent = new Intent(SearchActivity.this, GwangActivity.class);
                 intent.putExtra("selected_item", selected_item);
+                //EditText edit_gwang = (EditText)findViewById(R.id.keyword);
+                //edit_gwang.setText(selected_item);
 
                 startActivity(intent);
 
@@ -81,7 +83,7 @@ public class SearchActivity extends AppCompatActivity {
 
     public void search_s(View v){
 
-        EditText editText = (EditText)findViewById(R.id.keyword);
+        EditText editText = (EditText)findViewById(R.id.keyword_s);
         String userStr = editText.getText().toString();
 
         //Intent intent = new Intent(MainActivity.this, SearchActivity.class);
