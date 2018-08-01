@@ -3,5 +3,5 @@
     <string name="title_activity_addbusk">AddbuskActivity</string>
     <string name="title_activity_lodingclass">lodingclass</string>
     <string name="title_activity_search">SearchActivity</string>
-    <string name="title_activity_gwang">GwangActivity</string>
+    <string name="title_activity_duration">Duration</string>
 </resources>

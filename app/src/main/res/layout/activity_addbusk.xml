@@ -26,15 +26,15 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="이름 : "
-                android:textSize="20dp" />
+                android:text="이름  "
+                android:textSize="15dp" />
 
             <EditText
                 android:id="@+id/name_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,15 +46,15 @@
                 android:id="@+id/locate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="장소 : "
-                android:textSize="20dp" />
+                android:text="장소  "
+                android:textSize="15dp" />
 
             <EditText
                 android:id="@+id/locate_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -66,15 +66,15 @@
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="시간 : "
-                android:textSize="20dp" />
+                android:text="시간  "
+                android:textSize="15dp" />
 
             <EditText
                 android:id="@+id/time_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
          <LinearLayout
@@ -86,15 +86,15 @@
                  android:id="@+id/genre"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
-                 android:text="장르 : "
-                 android:textSize="20dp" />
+                 android:text="장르  "
+                 android:textSize="15dp" />
 
              <EditText
                  android:id="@+id/genre_edit"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:backgroundTint="@color/colorPrimaryDark"
-                 android:textSize="10dp" />
+                 android:textSize="15dp" />
          </LinearLayout>
 
         <LinearLayout
@@ -105,15 +105,15 @@
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="설명 : "
-                android:textSize="20dp" />
+                android:text="설명  "
+                android:textSize="15dp" />
 
             <EditText
                 android:id="@+id/description_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
             <LinearLayout
@@ -140,7 +140,9 @@
                     android:layout_weight="3"
                     android:layout_gravity="center"
                     android:text="사진 선택"
-                    android:textSize="15sp" />
+                    android:textSize="20sp"
+                    android:background="#F8A45E"
+                    android:textColor="@android:color/white"/>
             </LinearLayout>
 
 
@@ -158,7 +160,9 @@
             android:layout_height="match_parent"
             android:id="@+id/cancle_btn"
             android:textSize="20dp"
-            android:text="취소"/>
+            android:text="취소"
+            android:textColor="@android:color/white"
+            android:background="#b0b0b0"/>
 
         <Button
             android:layout_weight="2"
@@ -166,7 +170,9 @@
             android:layout_height="match_parent"
             android:id="@+id/regist_btn"
             android:textSize="20dp"
-            android:text="등록"/>
+            android:text="등록"
+            android:background="#F8A45E"
+            android:textColor="@android:color/white"/>
 
     </LinearLayout>
 
